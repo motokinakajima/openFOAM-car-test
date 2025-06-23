@@ -29,7 +29,7 @@ boundaryField
     inlet
     {
         type            fixedValue;
-        value           nonuniform List<vector> 0;
+        value           uniform (20 0 0);
     }
     outlet
     {

@@ -54,17 +54,17 @@ boundaryField
     FL
     {
         type            kqRWallFunction;
-        value           uniform 0.24;
+        value           nonuniform List<scalar> 0;
     }
     FR
     {
         type            kqRWallFunction;
-        value           uniform 0.24;
+        value           nonuniform List<scalar> 0;
     }
     RL
     {
         type            kqRWallFunction;
-        value           uniform 0.24;
+        value           nonuniform List<scalar> 0;
     }
     RR
     {
@@ -72,6 +72,11 @@ boundaryField
         value           uniform 0.24;
     }
     procBoundary5to0
+    {
+        type            processor;
+        value           uniform 0.24;
+    }
+    procBoundary5to1
     {
         type            processor;
         value           uniform 0.24;

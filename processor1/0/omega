@@ -34,8 +34,8 @@ boundaryField
     outlet
     {
         type            inletOutlet;
-        inletValue      uniform 1.78;
-        value           uniform 1.78;
+        inletValue      nonuniform List<scalar> 0;
+        value           nonuniform List<scalar> 0;
     }
     lowerWall
     {
@@ -81,7 +81,17 @@ boundaryField
         type            processor;
         value           uniform 1.78;
     }
+    procBoundary1to3
+    {
+        type            processor;
+        value           uniform 1.78;
+    }
     procBoundary1to4
+    {
+        type            processor;
+        value           uniform 1.78;
+    }
+    procBoundary1to5
     {
         type            processor;
         value           uniform 1.78;

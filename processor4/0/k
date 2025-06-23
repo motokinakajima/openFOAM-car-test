@@ -29,7 +29,7 @@ boundaryField
     inlet
     {
         type            fixedValue;
-        value           uniform 0.24;
+        value           nonuniform List<scalar> 0;
     }
     outlet
     {
@@ -49,7 +49,7 @@ boundaryField
     mainBody
     {
         type            kqRWallFunction;
-        value           nonuniform List<scalar> 0;
+        value           uniform 0.24;
     }
     FL
     {
@@ -64,7 +64,7 @@ boundaryField
     RL
     {
         type            kqRWallFunction;
-        value           nonuniform List<scalar> 0;
+        value           uniform 0.24;
     }
     RR
     {

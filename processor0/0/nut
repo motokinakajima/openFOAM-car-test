@@ -30,7 +30,7 @@ boundaryField
     inlet
     {
         type            calculated;
-        value           nonuniform List<scalar> 0;
+        value           uniform 0;
     }
     outlet
     {
@@ -50,17 +50,17 @@ boundaryField
     mainBody
     {
         type            nutkWallFunction;
-        value           nonuniform List<scalar> 0;
+        value           uniform 0;
     }
     FL
     {
         type            nutkWallFunction;
-        value           nonuniform List<scalar> 0;
+        value           uniform 0;
     }
     FR
     {
         type            nutkWallFunction;
-        value           nonuniform List<scalar> 0;
+        value           uniform 0;
     }
     RL
     {

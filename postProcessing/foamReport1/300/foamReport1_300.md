@@ -24,8 +24,8 @@ img {
 # simpleFoam : prototype-with-wheel-spin tutorial
 
 - Case: /home/openfoam/data/prototype-with-wheel-spin
-- Submission: 05:33:26 on Jun 24 2025
-- Report time: 05:33:58 on Jun 24 2025
+- Submission: 05:55:08 on Jun 24 2025
+- Report time: 05:56:57 on Jun 24 2025
 
 ---
 
@@ -58,10 +58,10 @@ img {
 
 | Property          | Value                |
 |-------------------|----------------------|
-| Bounds            | (-5 -4 0)(15 4 8) |
-| Number of cells   | 161462   |
-| Number of faces   | 504783   |
-| Number of points  | 182674  |
+| Bounds            | (-0.5 -0.4 0)(1.5 0.4 0.8) |
+| Number of cells   | 405114   |
+| Number of faces   | 1293286   |
+| Number of points  | 487737  |
 | Number of patches | 10 |
 
 ---

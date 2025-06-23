@@ -35,7 +35,7 @@ boundaryField
     outlet
     {
         type            calculated;
-        value           uniform 0;
+        value           nonuniform List<scalar> 0;
     }
     lowerWall
     {
@@ -45,7 +45,7 @@ boundaryField
     upperWall
     {
         type            calculated;
-        value           uniform 0;
+        value           nonuniform List<scalar> 0;
     }
     mainBody
     {
@@ -82,7 +82,17 @@ boundaryField
         type            processor;
         value           uniform 0;
     }
+    procBoundary1to3
+    {
+        type            processor;
+        value           uniform 0;
+    }
     procBoundary1to4
+    {
+        type            processor;
+        value           uniform 0;
+    }
+    procBoundary1to5
     {
         type            processor;
         value           uniform 0;

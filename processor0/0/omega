@@ -29,7 +29,7 @@ boundaryField
     inlet
     {
         type            fixedValue;
-        value           nonuniform List<scalar> 0;
+        value           uniform 1.78;
     }
     outlet
     {
@@ -49,17 +49,17 @@ boundaryField
     mainBody
     {
         type            omegaWallFunction;
-        value           nonuniform List<scalar> 0;
+        value           uniform 1.78;
     }
     FL
     {
         type            omegaWallFunction;
-        value           nonuniform List<scalar> 0;
+        value           uniform 1.78;
     }
     FR
     {
         type            omegaWallFunction;
-        value           nonuniform List<scalar> 0;
+        value           uniform 1.78;
     }
     RL
     {

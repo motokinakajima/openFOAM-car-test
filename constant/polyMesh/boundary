@@ -21,68 +21,68 @@ FoamFile
     frontAndBack
     {
         type            patch;
-        nFaces          360;
-        startFace       491894;
+        nFaces          382;
+        startFace       1236494;
     }
     inlet
     {
         type            patch;
         nFaces          72;
-        startFace       492254;
+        startFace       1236876;
     }
     outlet
     {
         type            patch;
         nFaces          72;
-        startFace       492326;
+        startFace       1236948;
     }
     lowerWall
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          4616;
-        startFace       492398;
+        nFaces          8132;
+        startFace       1237020;
     }
     upperWall
     {
         type            patch;
         nFaces          160;
-        startFace       497014;
+        startFace       1245152;
     }
     mainBody
     {
         type            wall;
         inGroups        2(mainBodyGroup wall);
-        nFaces          71;
-        startFace       497174;
+        nFaces          26544;
+        startFace       1245312;
     }
     FL
     {
         type            wall;
         inGroups        2(wheelGroup wall);
-        nFaces          16;
-        startFace       497245;
+        nFaces          3009;
+        startFace       1271856;
     }
     FR
     {
         type            wall;
         inGroups        2(wheelGroup wall);
-        nFaces          16;
-        startFace       497261;
+        nFaces          2993;
+        startFace       1274865;
     }
     RL
     {
         type            wall;
         inGroups        2(wheelGroup wall);
-        nFaces          19;
-        startFace       497277;
+        nFaces          3122;
+        startFace       1277858;
     }
     RR
     {
         type            wall;
         inGroups        2(wheelGroup wall);
-        nFaces          19;
-        startFace       497296;
+        nFaces          3092;
+        startFace       1280980;
     }
 )
 

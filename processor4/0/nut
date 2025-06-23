@@ -25,12 +25,12 @@ boundaryField
     frontAndBack
     {
         type            calculated;
-        value           uniform 0;
+        value           nonuniform List<scalar> 0;
     }
     inlet
     {
         type            calculated;
-        value           uniform 0;
+        value           nonuniform List<scalar> 0;
     }
     outlet
     {
@@ -45,12 +45,12 @@ boundaryField
     upperWall
     {
         type            calculated;
-        value           uniform 0;
+        value           nonuniform List<scalar> 0;
     }
     mainBody
     {
         type            nutkWallFunction;
-        value           nonuniform List<scalar> 0;
+        value           uniform 0;
     }
     FL
     {
@@ -65,7 +65,7 @@ boundaryField
     RL
     {
         type            nutkWallFunction;
-        value           nonuniform List<scalar> 0;
+        value           uniform 0;
     }
     RR
     {

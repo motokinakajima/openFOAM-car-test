@@ -29,13 +29,13 @@ boundaryField
     inlet
     {
         type            fixedValue;
-        value           nonuniform List<vector> 0;
+        value           uniform (20 0 0);
     }
     outlet
     {
         type            inletOutlet;
-        inletValue      nonuniform List<vector> 0;
-        value           nonuniform List<vector> 0;
+        inletValue      uniform (0 0 0);
+        value           uniform (20 0 0);
     }
     lowerWall
     {
