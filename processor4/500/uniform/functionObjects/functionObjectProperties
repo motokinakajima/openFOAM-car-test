@@ -1,0 +1,127 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       dictionary;
+    location    "500/uniform/functionObjects";
+    object      functionObjectProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+cdf7e925f5746741c316f5fbcf39ad0dfca90775
+{
+    forceCoeffs1
+    {
+        scalar
+        {
+            Cd              0.002347708059871416;
+            CdPressure      0.002322619212212848;
+            CdViscous       2.508884765856773e-05;
+            CdInternal      0;
+            Cd(f)           0.001202695339480846;
+            Cd(f)Pressure   0.001190068159973995;
+            Cd(f)Viscous    1.262717950685089e-05;
+            Cd(f)Internal   0;
+            Cd(r)           0.001145012720390569;
+            Cd(r)Pressure   0.001132551052238853;
+            Cd(r)Viscous    1.246166815171685e-05;
+            Cd(r)Internal   0;
+            Cl              0.0008947800003514736;
+            ClPressure      0.0008927994637315551;
+            ClViscous       1.980536619918488e-06;
+            ClInternal      0;
+            Cl(f)           0.0009296839457636207;
+            Cl(f)Pressure   0.0009272574587132681;
+            Cl(f)Viscous    2.42648705035255e-06;
+            Cl(f)Internal   0;
+            Cl(r)           -3.490394541214708e-05;
+            Cl(r)Pressure   -3.445799498171301e-05;
+            Cl(r)Viscous    -4.459504304340621e-07;
+            Cl(r)Internal   0;
+            CmPitch         0.0004822939455878839;
+            CmPitchPressure 0.0004808577268474906;
+            CmPitchViscous  1.436218740393306e-06;
+            CmPitchInternal 0;
+            CmRoll          2.884130954513843e-05;
+            CmRollPressure  2.875855386757141e-05;
+            CmRollViscous   8.275567756702045e-08;
+            CmRollInternal  0;
+            CmYaw           -5.47815369189241e-05;
+            CmYawPressure   -5.402400242337551e-05;
+            CmYawViscous    -7.575344955485921e-07;
+            CmYawInternal   0;
+            Cs              -6.434937095897102e-05;
+            CsPressure      -6.418256568760515e-05;
+            CsViscous       -1.668052713658736e-07;
+            CsInternal      0;
+            Cs(f)           -8.695622239840961e-05;
+            Cs(f)Pressure   -8.611528526717808e-05;
+            Cs(f)Viscous    -8.409371312315289e-07;
+            Cs(f)Internal   0;
+            Cs(r)           2.260685143943859e-05;
+            Cs(r)Pressure   2.193271957957294e-05;
+            Cs(r)Viscous    6.741318598656554e-07;
+            Cs(r)Internal   0;
+        }
+    }
+    solverInfo1
+    {
+        scalar
+        {
+            Ux_initial      2.76738e-05;
+            Ux_final        2.3673e-06;
+            Uy_initial      0.000119985;
+            Uy_final        1.06316e-05;
+            Uz_initial      4.51135e-05;
+            Uz_final        3.5138e-06;
+            p_initial       7.02425e-05;
+            p_final         6.70222e-07;
+        }
+        label
+        {
+            Ux_iters        7;
+            Uy_iters        6;
+            Uz_iters        6;
+            p_iters         3;
+        }
+    }
+}
+
+streamLines
+{
+    p
+    {
+        file            "<case>/postProcessing/sets/streamLines/500/track0.vtp";
+    }
+    k
+    {
+        file            "<case>/postProcessing/sets/streamLines/500/track0.vtp";
+    }
+    U
+    {
+        file            "<case>/postProcessing/sets/streamLines/500/track0.vtp";
+    }
+}
+
+cuttingPlane
+{
+    p
+    {
+        file            "<case>/postProcessing/cuttingPlane/500/yNormal.vtp";
+    }
+    U
+    {
+        file            "<case>/postProcessing/cuttingPlane/500/yNormal.vtp";
+    }
+}
+
+
+// ************************************************************************* //

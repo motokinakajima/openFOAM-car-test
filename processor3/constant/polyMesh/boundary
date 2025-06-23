@@ -1,0 +1,122 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      binary;
+    arch        "LSB;label=32;scalar=64";
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+13
+(
+    frontAndBack
+    {
+        type            patch;
+        nFaces          0;
+        startFace       80796;
+    }
+    inlet
+    {
+        type            patch;
+        nFaces          0;
+        startFace       80796;
+    }
+    outlet
+    {
+        type            patch;
+        nFaces          0;
+        startFace       80796;
+    }
+    lowerWall
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          663;
+        startFace       80796;
+    }
+    upperWall
+    {
+        type            patch;
+        nFaces          0;
+        startFace       81459;
+    }
+    mainBody
+    {
+        type            wall;
+        inGroups        2(mainBodyGroup wall);
+        nFaces          0;
+        startFace       81459;
+    }
+    FL
+    {
+        type            wall;
+        inGroups        2(wheelGroup wall);
+        nFaces          0;
+        startFace       81459;
+    }
+    FR
+    {
+        type            wall;
+        inGroups        2(wheelGroup wall);
+        nFaces          0;
+        startFace       81459;
+    }
+    RL
+    {
+        type            wall;
+        inGroups        2(wheelGroup wall);
+        nFaces          0;
+        startFace       81459;
+    }
+    RR
+    {
+        type            wall;
+        inGroups        2(wheelGroup wall);
+        nFaces          0;
+        startFace       81459;
+    }
+    procBoundary3to0
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          1395;
+        startFace       81459;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        3;
+        neighbProcNo    0;
+    }
+    procBoundary3to4
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          825;
+        startFace       82854;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        3;
+        neighbProcNo    4;
+    }
+    procBoundary3to5
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          610;
+        startFace       83679;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        3;
+        neighbProcNo    5;
+    }
+)
+
+// ************************************************************************* //
