@@ -46,22 +46,34 @@ boundaryField
 
     FL
     {
-        type            noSlip;
+        type            rotatingWallVelocity;
+        origin          (-0.02848173 -0.02549989 0.01399303);
+        axis            (0 1 0);
+        omega           100;
     }
     
     FR
     {
-        type            noSlip;
+        type            rotatingWallVelocity;
+        origin          (-0.02851836  0.02549866  0.01399303);
+        axis            (0 1 0);
+        omega           100;
     }
     
     RL
     {
-        type            noSlip;
+        type            rotatingWallVelocity;
+        origin          (0.09151802 -0.02349974  0.01399313);
+        axis            (0 1 0);
+        omega           100;
     }
     
     RR
     {
-        type            noSlip;
+        type            rotatingWallVelocity;
+        origin          (0.09148201 0.02349974 0.01399313);
+        axis            (0 1 0);
+        omega           100;
     }
 
     #include "include/frontBackUpperPatches"
